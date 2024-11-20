@@ -12,7 +12,7 @@ RUN set -xe ;\
     sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list' ;\
     wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - ;\
     apt-get update ;\
-    apt-get install --no-install-recommends -y postgresql-server-dev-${CNPG_TAG%.*} checkinstall build-essential git liblz4-dev libreadline-dev zlib1g-dev; \
+    apt-get install --no-install-recommends -y postgresql-server-dev-${CNPG_TAG%.*} checkinstall build-essential git liblz4-dev libreadline-dev zlib1g-dev libzstd-dev; \
     cd /tmp; \
     git clone --depth=1 --branch ver_${PG_REPACK_TAG} https://github.com/reorg/pg_repack; \
     cd /tmp/pg_repack; \
