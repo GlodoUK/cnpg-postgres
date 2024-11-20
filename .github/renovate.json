@@ -27,12 +27,12 @@
     {
       "matchPackageNames": ["reorg/pg_repack"],
       "enabled": true,
-      "extractVersion": "^ver_(?<version>.*)$",
+      "extractVersion": "^ver_(?<version>.*)$"
     },
     {
       "matchPackageNames": ["debian"],
       "enabled": true,
-      "versioning": "debian",
+      "versioning": "debian"
     }
   ]
 }
