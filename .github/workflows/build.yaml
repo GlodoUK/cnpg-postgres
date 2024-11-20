@@ -29,7 +29,7 @@ jobs:
        uses: mikefarah/yq@v4.44.5
        id: get-versions
        with:
-        cmd: yq eval 'del(.debian)' -o=json -I=0 versions.yaml
+        cmd: yq eval 'del(.debian)' -I=0 versions.yaml
 
      - name: Get distro version
        uses: mikefarah/yq@v4.44.5
