@@ -29,13 +29,13 @@ jobs:
        uses: mikefarah/yq@v4.44.5
        id: get-versions
        with:
-        cmd: yq eval 'del(.debian)' -I=0 versions.yaml
+        cmd: yq eval 'del(.debian)' -o=json -I=0 versions.yaml
 
      - name: Get distro version
        uses: mikefarah/yq@v4.44.5
        id: get-distro
        with:
-        cmd: yq eval '.debian' -o=json -I=0 versions.yaml
+        cmd: yq eval '.debian' -I=0 versions.yaml
 
   build_and_push:
     runs-on: ubuntu-latest
