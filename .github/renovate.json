@@ -33,7 +33,6 @@
       "matchPackageNames": ["debian"],
       "enabled": true,
       "versioning": "debian",
-    },
-
+    }
   ]
 }
