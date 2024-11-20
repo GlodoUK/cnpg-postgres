@@ -1,0 +1,16 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# editor and IDE paraphernalia
+.idea
+*.swp
+*.swo
+*~
+*.tmp
+
+# Testing artifacts and logs
+_*/

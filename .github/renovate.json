@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "automerge": true,
+  "rebaseWhen": "conflicted",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^versions.yaml$"],
+      "matchStrings": [
+        "datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\n.*?\"(?<currentValue>.*)\"\\n"
+      ]
+    }
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/postgresql"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["ghcr.io/cloudnative-pg/postgresql"],
+      "groupName": "postgresql"
+    },
+    {
+      "matchPackageNames": ["reorg/pg_repack"],
+      "enabled": true,
+      "extractVersion": "^ver_(?<version>.*)$",
+    },
+    {
+      "matchPackageNames": ["debian"],
+      "enabled": true,
+      "versioning": "debian",
+    },
+
+  ]
+}

@@ -1,0 +1,13 @@
+debian:
+  # renovate: datasource=docker depName=debian
+  "bullseye"
+cnpg:
+  # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
+  - "14.14"
+  # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
+  - "15.9"
+  # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
+  - "16.5"
+pg_repack:
+  # renovate: datasource=github-tags depName=reorg/pg_repack
+  - "1.5.1"
