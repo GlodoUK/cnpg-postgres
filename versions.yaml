@@ -8,6 +8,8 @@ cnpg:
   - "15.9"
   # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
   - "16.5"
+  # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
+  - "17.1"
 pg_repack:
   # renovate: datasource=github-tags depName=reorg/pg_repack
   - "1.5.1"
