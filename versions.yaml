@@ -12,4 +12,4 @@ cnpg:
   - "17.2"
 pg_repack:
   # renovate: datasource=github-tags depName=reorg/pg_repack
-  - "1.5.1"
+  - "1.5.2"
