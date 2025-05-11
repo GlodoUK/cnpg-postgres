@@ -26,13 +26,13 @@ jobs:
        uses: actions/checkout@v4
 
      - name: Get dependency versions
-       uses: mikefarah/yq@v4.45.3
+       uses: mikefarah/yq@v4.45.4
        id: get-versions
        with:
         cmd: yq eval 'del(.debian)' -o=json -I=0 versions.yaml
 
      - name: Get distro version
-       uses: mikefarah/yq@v4.45.3
+       uses: mikefarah/yq@v4.45.4
        id: get-distro
        with:
         cmd: yq eval '.debian' -I=0 versions.yaml
