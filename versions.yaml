@@ -3,13 +3,13 @@ debian:
   "bookworm"
 cnpg:
   # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
-  - "14.17"
+  - "14.18"
   # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
-  - "15.12"
+  - "15.13"
   # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
-  - "16.8"
+  - "16.9"
   # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
-  - "17.4"
+  - "17.5"
 pg_repack:
   # renovate: datasource=github-tags depName=reorg/pg_repack
   - "1.5.2"
