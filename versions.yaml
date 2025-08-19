@@ -1,6 +1,6 @@
 debian:
   # renovate: datasource=docker depName=debian
-  "bookworm"
+  "trixie"
 cnpg:
   # renovate: datasource=docker depName=ghcr.io/cloudnative-pg/postgresql
   - "14.18"
