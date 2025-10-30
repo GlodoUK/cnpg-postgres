@@ -1,5 +1,7 @@
 # PostgreSQL / CNPG Container Images
 
+:warning: This repository has been retired. At this point we will not be producing new images. If we require new images they will appear in GlodoUK/containers.
+
 These images are built on top of the [CNPG postgres-containers](https://github.com/cloudnative-pg/postgres-containers)
 and adds the following software:
 
